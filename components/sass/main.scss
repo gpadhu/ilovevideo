@@ -1,0 +1,51 @@
+@import "normalize";
+@import 'https://fonts.googleapis.com/css?family=Bungee+Shade';
+@import 'http://vjs.zencdn.net/5.4.6/video-js.min.css'; 
+
+$header-font: 'Bungee Shade', cursive;
+$background: #63c;
+$header-bg: #ed143d;
+$primary-color: #fff;
+
+body {
+	background-color: $background;
+	color: $primary-color;
+}
+
+header {
+	font: 300% $header-font;
+	text-align: center;
+	background: $header-bg;
+	margin: 0;
+	@media screen and (max-width: 750px) {
+		font-size: 150%;
+	}
+
+}
+
+h1 {
+	font: 100% $header-font;
+	margin: 0;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: $header-bg;
+}
+
+.video-title {
+	font-size: 150%;
+	text-align: center;
+	padding: 10px;
+}
+
+div.video {
+	width: 80%;
+	max-width: 640px;
+	margin: 0 auto;
+	@media screen and (max-width: 750px) {
+		width: 96%;
+	}
+	padding: 50px 0 50px 0;
+}

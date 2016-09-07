@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Videos - Joy for eyes</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+<h1>Sit back and enjoy!</h1>
+</header>
+<div id="main-container">
+</div>
+<footer id="footer">&copy; Videos Joy Ltd.</footer>
+<script id="template" type="x-tmpl-mustache">
+	<div class="video-title">{{title}}</div>
+		<video class="video-js vjs-default-sskin vjs-16-9 vjs-big-play-centered" controls="true" preload="auto" width="640" height="264" poster="{{& thumbnail}}" data-setup='{"fluid": true}'>
+		 <source src="{{& source}}"/>
+		 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+		</video>
+	</div>
+</script>
+<script type="text/javascript" src="./scripts/main.js"></script>
+</body>
+</html>
